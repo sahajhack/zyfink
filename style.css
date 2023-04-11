@@ -1,0 +1,178 @@
+:root
+{
+    --g0: #000000;
+    --g1: #111111;
+    --g2: #222222;
+    --g3: #333333;
+    --g4: #444444;
+    --g5: #555555;
+    --g6: #666666;
+    --g7: #777777;
+    --g8: #888888;
+    --g9: #999999;
+    --ga: #aaaaaa;
+    --gb: #bbbbbb;
+    --gc: #cccccc;
+    --gd: #dddddd;
+    --ge: #eeeeee;
+    --gf: #ffffff;
+    --r:rgb(255, 0, 0);
+    --g:rgb(0, 255, 0);
+    --b:rgb(0, 0, 255);
+    --gb:rgb(0, 255, 255);
+    --rg:rgb(225, 255, 0);
+    --br:rgb(255, 0, 255);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: var(--g0);
+    color: var(--gf);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+.main-nav
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: var(--gf);
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    font-size: .99em;
+}
+.main-nav a:hover
+{
+    color: var(--g9);
+}
+.red
+{
+    background: -webkit-linear-gradient(60deg, var(--g0), var(--r), var(--r), var(--g0));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo
+{
+    font-size: 1.45em;
+}
+.navbar
+{
+    padding-top: .5em;
+	padding-bottom: .5em;
+    border-bottom: 3px solid;
+    border-color: var(--r);
+}
+.navblock
+{
+    border-radius: 50px;
+    font-weight: 600;
+}
+.navblock-active
+{
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--r);
+}
+@media (min-width: 769px) 
+{
+	.navbar,
+	.main-nav 
+    {
+		display: flex;
+	}
+	.navbar 
+    {
+		flex-direction: column;
+		align-items: center;
+    }
+    .header
+    {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+    
+}
+@media (min-width: 1025px) 
+{
+	.navbar 
+    {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+.contactme
+{
+    background-color: var(--g9);
+    height: 100%;
+    width: auto;
+}
+.homepg
+{
+    text-align: center;
+    padding: 10%;
+    margin-bottom: 50px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+.sahaj
+{
+    font-size: 12vmin;
+    font-weight: 900;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+.words
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.hacker
+{
+    background-color: #555;
+    padding: 0.5% 1.0%;
+    border-radius: 50px;
+    margin: 0.4%;
+    border: 2px solid #222;
+}
+.programmer
+{
+    background-color: #555;
+    padding: 0.5% 1.0%;
+    border-radius: 50px;
+    margin: 0.4%;
+    border: 2px solid #222;
+}
+.linuxgeek
+{
+    background-color: #555;
+    padding: 0.5% 1.0%;
+    border-radius: 50px;
+    margin: 0.4%;
+    border: 2px solid #222;
+}
+.zyfink
+{
+    font-size: 4vmin;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.para
+{
+    font-size: 4vmin;
+    padding: 0;
+    margin: 0;
+}
